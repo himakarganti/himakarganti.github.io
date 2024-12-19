@@ -22,13 +22,13 @@ repository               : "himakarganti/himakarganti.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
+  name             : "Himakar Ganti, Ph.D."
+  # pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  # location         : "Cincinnati, OH 45220"
+  employer         : "University of Cincinnati"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "gantihr@ucmail.uc.edu" 
 
   # Academic websites
   googlescholar    : "https://scholar.google.com/citations?user=bJEmDoMAAAAJ&hl=en"
