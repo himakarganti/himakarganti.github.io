@@ -246,7 +246,19 @@
                                     <h3>You are visitor number:</h3>
                                 </header>
                                 <center><b>
-                                <div class="website-counter"></div>
+                                <div>
+                                <p>The number of visitors is : <span id="cntr">0</span></p>
+                                </div> 
+                                <script>
+                                  function counter_fn() {
+                                  var counter = document.getElementById("cntr");
+                                  var count = 0;
+                                  count = parseInt(counter.innerHTML);
+                                  count = count + 1;
+                                  counter.innerHTML = count;
+                                  }
+                                  window.onload = counter_fn;
+                                </script>
 
                             </div>
                         </div>
