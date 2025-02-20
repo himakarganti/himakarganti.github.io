@@ -245,10 +245,7 @@
                                     <h3>You are visitor number:</h3>
                                 </header>
                                 <center><b>
-                                 <a href='https://www.free-counters.org/'>free HitCounter</a> 
-                                 <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=6890ba6d5afc6527ddcf8e2d0f4b2fbaf02fd334'></script> 
-                                 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1303348/t/3"></script>
-
+                                <?php  $file='counter.txt';  $read=file_get_contents($file);  $open=fopen($file,'w');  $read++;  $write=fwrite($open, $read);  fclose($open);  echo 'Number of visitors: '.$read;?>
                             </div>
                         </div>
                         <div class="row">
