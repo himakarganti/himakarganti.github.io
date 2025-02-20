@@ -245,7 +245,30 @@
                                     <h3>You are visitor number:</h3>
                                 </header>
                                 <center><b>
-                                <?php  $file='counter.txt';  $read=file_get_contents($file);  $open=fopen($file,'w');  $read++;  $write=fwrite($open, $read);  fclose($open);  echo 'Number of visitors: '.$read;?>
+                                <?php 
+                                session_start(); 
+                                $counter_name = "counter.txt";
+                                // Check if a text file exists.
+                                // If not create one and initialize it to zero.
+                                if (!file_exists($counter_name)) {
+                                  $f = fopen($counter_name, "w");
+                                  fwrite($f,"0");
+                                  fclose($f);
+                                }
+                                // Read the current value of our counter file
+                                $f = fopen($counter_name,"r");
+                                $counterVal = fread($f, filesize($counter_name));
+                                fclose($f);
+                                // Has visitor been counted in this session?
+                                // If not, increase counter value by one
+                                if(!isset($_SESSION['hasVisited'])){
+                                  $_SESSION['hasVisited']="yes";
+                                  counterVal++;
+                                  $f = fopen($counter_name, "w");
+                                  fwrite($f, $counterVal);
+                                  fclose($f);
+                                }
+echo "You are visitor number $counterVal to this site";
                             </div>
                         </div>
                         <div class="row">
