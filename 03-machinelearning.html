@@ -150,26 +150,26 @@
                                     </header>
 
                                     <center>
-                                    <p>Flows that do vary in space but not in time, such as statistically stationary and steady-state flows.</p>
+                                    <p>As different machine learning algorithms are developed, one has to have a good understanding of their performance to select the most suitable algorithm for accuracy and training speedup purposes. To demonstrate this, I developed Gaussian Processes to work with multiple independent variables and compare the training and accuracy requirements with a deep neural network.</p>
                                     </center>
 
                                     <ul>
                                     <hr class="content"></hr>
                                     <h3><center>Change in Contour Resolution with Number of Training Points</center></h3>
-                                    <p>Turbulent kinetic energy (TKE) comparison for momentum flux ratios (q) of 7 and 40 with real data from simulations. The L1 error is - ~10.47% for q = 7; ~13.25% for q = 40.</p>
+                                    <p>Changing the number of training points alters the training surface significantly making it very feature rich. This change necessitates the altering of kernel functions or the neural network architecture to achieve better results for accuracy and speedup.</p>
                                     <center>
                                     <p><img style="width:80%; height:80%" src="images/MGPML/01-ChangeTrainingPoints.jpg" alt=""></p>
-                                    <p>TKE contours for q=7 and q=40.</p>
+                                    <p>Training surface contours for velocity component with two independent variables - density of lighter fluid and acceleration for a Rayleigh-Taylor instability.</p>
                                     </center>
                                     </ul>
 
                                     <ul>
                                     <hr class="content"></hr>
                                     <h3><center>Comparison of Machine Learning Predictions for the Rayleigh-Taylor Phenomenon</center></h3>
-                                    <p>Vapor fraction comparison for momentum flux ratios of 7 and 40 with real data from simulations. The L1 error is - ~11.91% for q = 7; ~7.99% for q = 40.</p>
+                                    <p>Comparison of Gaussian Process (GP) and Neural Network (NN) based surrogate models for accuracy with actual simulation data or truth for a Rayleigh-Taylor instability. </p>
                                     <center>
                                     <p><img style="width:40%; height:40%" src="images/MGPML/02-GPMLNNCompare.jpg" alt=""></p>
-                                    <p>Vapor fraction contours for q=7 and q=40.</p>
+                                    <p>L1 errors, GP: ~ 20%; NN: 34. Training times, GP - 1.5 hours; NN - 126 hours.</p>
                                     </center>
                                     </ul>
 
