@@ -67,9 +67,9 @@ input, select, textarea {
 body {
   -ms-overflow-style: scrollbar; }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 600px) {
   html, body {
-    min-width: 600px; } }
+    min-width: 480px; } }
 
 html {
   box-sizing: border-box; }
